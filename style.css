@@ -1,22 +1,22 @@
 /* font */
 @font-face {
     font-family:'Metropolis Bold';
-    src:    url(/Fonts/metropolisFontFamily/Metropolis-SemiBold.woff);
+    src:    url(Fonts/metropolisFontFamily/Metropolis-SemiBold.woff);
 }
 @font-face {
     font-family:'Metropolis Thin';
-    src:    url(/Fonts/metropolisFontFamily/Metropolis-ThinItalic.woff);
+    src:    url(Fonts/metropolisFontFamily/Metropolis-ThinItalic.woff);
 }
 @font-face {
     font-family:'Metropolis Med';
-    src:    url(/Fonts/metropolisFontFamily/Metropolis-Medium.woff);
+    src:    url(Fonts/metropolisFontFamily/Metropolis-Medium.woff);
 }
 
 /* style */
 body {
     width: 100%;
     font-family: 'Metropolis Med', sans-serif;
-    background-image: url(/img/bg.png);
+    background-image: url(img/bg.png);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 91.3vmax;
