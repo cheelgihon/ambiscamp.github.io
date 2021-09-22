@@ -278,12 +278,12 @@ footer{
         flex-direction: column;
         text-align: center;
     }
-    .jumbotron .img-container .img, 
+    .jumbotron .img-container .img,
     .grid .img-container .img{
         margin-top: -20px;
         margin-bottom: 20px;
-        width: 280px;
-        height: 280px;
+        width: 75%;
+        height: 75%;
     }
     .navbar .nav-img{
         width: 250%;
@@ -292,7 +292,7 @@ footer{
         left: -10px;
         z-index: -1;
     }
-    .jumbotron .register-btn{
+    .jumbotron .register-btn, #join .register-btn{
         width: 40%;
         margin-top: 0px;
         border-radius: 2em;
@@ -326,8 +326,8 @@ footer{
     .grid .img-container .img{
         margin-top: -20px;
         margin-bottom: 20px;
-        width: 280px;
-        height: 280px;
+        width: 75%;
+        height: 75%;
     }
     .navbar .nav-img{
         width: 250%;
