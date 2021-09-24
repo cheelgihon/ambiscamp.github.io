@@ -174,7 +174,7 @@ form{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-section h4{
+section h4, .form .my-alert{
     text-align: center;
     background-color: lavender;
 }
