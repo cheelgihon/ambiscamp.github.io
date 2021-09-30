@@ -113,7 +113,7 @@ section#about, #home, #course, #timeline, #volunteer{
 .akhir-about{
     position: absolute;
 }
-#course, #volunteer, footer {
+#timeline, #volunteer, footer {
     background-color: #D2E7FE;
 }
 #course .card{
@@ -123,14 +123,9 @@ section#about, #home, #course, #timeline, #volunteer{
     border: transparent;
 }
 #course .card img{
-    border-top-left-radius: 1.2rem;
-    border-top-right-radius: 1.2rem;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
-    transform: scale(.7);
+    padding:10px;
 }
 #course .card .card-body p{
-    position: relative;
     top: -10px;
     font-weight: 500;
 }
@@ -174,7 +169,7 @@ footer{
 
 
 /* Timeline CSS CP Lepage */
-.container-fluid.timeline-container{
+.timeline-container{
     background-color: #fff;
     color: #000090;
     height: 100%;
