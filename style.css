@@ -12,19 +12,23 @@
     src:    url(Fonts/metropolisFontFamily/Metropolis-Medium.woff);
 }
 
+
 /* style */
 body {
     width: 100%;
     font-family: 'Metropolis Med', sans-serif;
-    background-image: url(img/bg.png);
-    background-position: top right;
+    background-image: url(img/bg2.png);
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 91.3vmax;
+    background-size: 100vmax;
+    background-position-y: -7.2rem;
     transition: 0.5s;
 }
-nav, nav img{
+nav{
+    font-family: 'Quicksand', sans-serif;;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    background-color:white;
 }
 .navbar .nav-img{
     width: 100%;
@@ -46,23 +50,23 @@ nav, nav img{
     margin-left: 1.5rem;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-    color: #E4F1FF;
+    color: #00438b;
     transition: 0.2s;
     border-bottom: 2px solid transparent;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    border-bottom: 2px solid #E4F1FF;
+    border-bottom: 2px solid #00438b;
 }
 section#about, #home, #course, #timeline, #volunteer{
     padding-top: 6rem;
 }
 .jumbotron{
     width: 100%;
-    margin: 0 auto 100px;
+    margin: -50px auto 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.text-container, .register-btn {
+.text-container, .register-btn{
     width: 80%;
     height: fit-content;
     margin: auto;
@@ -78,35 +82,34 @@ section#about, #home, #course, #timeline, #volunteer{
     margin-top: -18px;
     font-family: 'Metropolis Thin';
 }
-.text-container h6{
-    font-style: italic;
-    font-weight: bold;
-    font-size: .92rem;
-}
 .text-container p{
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.1rem;
 }
 .register-btn{
+    font-family: 'Quicksand', sans-serif;
     width: 20%;
     margin-top: 30px;
     border-radius: 2em;
     border: 0;
-    background-color:#ff0080;
+    background-color:#cc4f53;
     border: 1px solid transparent;
     transform: scale(1.14);
 }
 .register-btn:hover{
-    color: #ff0080;
+    color: #cc4f53;
     background-color:transparent;
-    border: 1px solid #ff0080;
+    border: 1px solid #cc4f53;
 }
 .img-container{
     width: 100%;
-    margin: auto;
+    height: fit-content;
 }
-.jumbotron .img-container .img{
-    width: 480px;
-    height: 480px;
+.jumbotron .img-container img.img{
+    position: relative;
+    top: 50px;
+    right: 40px;
+    height: 550px;
 }
 .judul-about{
     font-weight:bold;
@@ -132,6 +135,7 @@ section#about, #home, #course, #timeline, #volunteer{
 #course .card .card-body p{
     top: -10px;
     font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
 }
 #course h3, h3.saintek{
     width: max-content;
@@ -152,6 +156,7 @@ section#about, #home, #course, #timeline, #volunteer{
 }
 .grid .text-container p{
     margin-top: 4rem;
+    font-family: 'Quicksand', sans-serif;
 }
 footer{
     padding-top: 2rem;
@@ -168,7 +173,7 @@ footer .container{
 }
 footer .right-side a{
     margin: auto;
-    color: black;
+    color: #000;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -194,7 +199,7 @@ footer .container .left-side .contact-us ul{
     margin-top: 25px;
 }
 footer .container .left-side .contact-us ul li{
-    color: black;
+    color: #000;
     list-style: none;
     margin-bottom: 10px;
 }
@@ -221,7 +226,7 @@ footer .visit-us{
     transition: 0.5s;
 }
 footer .container .left-side .contact-us a img:hover{
-    transform:rotateZ(-20deg);
+    transform:rotate(-20deg);
 }
 .visit-us img:hover{
     transform:rotateZ(20deg);
@@ -245,19 +250,20 @@ footer .container .left-side .contact-us a img:hover{
 /* Timeline CSS CP Lepage */
 .timeline-container{
     background-color: #fff;
-    color: #000090;
+    color: #00438b;
     height: 100%;
 }
 .circle{
     font-weight: bold;
     padding: 12px 20px;
     border-radius: 50%;
-    background-color: #000090;
+    background-color: #00438b;
     color: #fff;
     max-height: 50px;
 }
 .how-it-works.row{
     display: flex;
+    font-family: 'Quicksand', sans-serif;
 }
 .how-it-works.row .col-2{
     display: inline-flex;
@@ -268,7 +274,7 @@ footer .container .left-side .contact-us a img:hover{
 .how-it-works.row .col-2::after{
     content: '';
     position: relative;
-    border-left: 3px solid #000090;
+    border-left: 3px solid #00438b;
     z-index: 1;
 }
 .timeline div{
@@ -276,7 +282,7 @@ footer .container .left-side .contact-us a img:hover{
     height: 40px;
 }
 .timeline hr{
-    border-top: 3px solid #000090;
+    border-top: 3px solid #00438b;
     margin: 0;
     top: 17px;
     position: relative;
@@ -287,7 +293,7 @@ footer .container .left-side .contact-us a img:hover{
     overflow: hidden;
 }
 .timeline .corner{
-    border: 3.8px solid #000090;
+    border: 3.8px solid #00438b;
     width: 100%;
     position: relative;
     border-radius: 15px;
@@ -330,8 +336,8 @@ footer .container .left-side .contact-us a img:hover{
 /* Responsive */
 @media screen and (min-width: 320px) and (max-width:384px) {
     body {
-        background-size: 100vmax;
-        background-position-x: -180px;
+        background-size: 200vmax;
+        background-position-y: -80px;
     }
     .jumbotron{
         width: 100%;
@@ -347,7 +353,11 @@ footer .container .left-side .contact-us a img:hover{
         flex-direction: column;
         text-align: center;
     }
-    .jumbotron .img-container .img,
+    .jumbotron .img-container img.img{
+        position: static;
+        height: 250px;
+        margin-bottom: 30px;
+    }
     .grid .img-container .img{
         margin-top: -20px;
         margin-bottom: 20px;
@@ -366,8 +376,8 @@ footer .container .left-side .contact-us a img:hover{
         margin-top: 0px;
         border-radius: 2em;
         border: 0;
-        background-color:#ff0080;
         border: 1px solid transparent;
+        background-color: #cc4f53;
         transform: scale(0.9);
         align-items: center;
     }
@@ -391,7 +401,7 @@ footer .container .left-side .contact-us a img:hover{
 @media screen and (min-width: 384px) and (max-width:666px) {
     body {
         background-size: 200vmax;
-        background-position-x: -380px;
+        background-position-y: -250px;
     }
     .jumbotron{
         width: 100%;
@@ -407,7 +417,11 @@ footer .container .left-side .contact-us a img:hover{
         flex-direction: column;
         text-align: center;
     }
-    .jumbotron .img-container .img, 
+    .jumbotron .img-container img.img{
+        position: static;
+        height: 250px;
+        margin-bottom: 30px;
+    }
     .grid .img-container .img{
         margin-top: -20px;
         margin-bottom: 20px;
@@ -426,7 +440,7 @@ footer .container .left-side .contact-us a img:hover{
         margin-top: 0px;
         border-radius: 2em;
         border: 0;
-        background-color:#ff0080;
+        background-color: #cc4f53;
         border: 1px solid transparent;
         transform: scale(0.9);
         align-items: center;
@@ -451,9 +465,15 @@ footer .container .left-side .contact-us a img:hover{
 @media screen and (min-width: 667px) and (max-width:990px) {
     body {
         background-size: 120vmax;
-        background-position-x: -120px;
+        background-position-y: 50px;
     }
-    .jumbotron, 
+    .jumbotron{
+        width: 100%;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    } 
     .grid{
         width: 100%;
         margin: 0 auto 0;
@@ -461,7 +481,10 @@ footer .container .left-side .contact-us a img:hover{
         grid-template-columns: 1fr 1fr;
         text-align: center;
     }
-    .jumbotron .img-container .img, 
+    .jumbotron .img-container img.img{
+        position: relative;
+        height: 300px;
+    }
     .grid .img-container .img{
         width: 280px;
         height: 280px;
@@ -478,8 +501,8 @@ footer .container .left-side .contact-us a img:hover{
         margin-top: 0px;
         border-radius: 2em;
         border: 0;
-        background-color:#ff0080;
         border: 1px solid transparent;
+        background-color: #cc4f53;
         transform: scale(0.9);
         align-items: center;
     }
@@ -529,8 +552,8 @@ footer .container .left-side .contact-us a img:hover{
         margin-top: 0px;
         border-radius: 2em;
         border: 0;
-        background-color:#ff0080;
         border: 1px solid transparent;
+        background-color: #cc4f53;
         transform: scale(0.9);
         align-items: center;
     }
