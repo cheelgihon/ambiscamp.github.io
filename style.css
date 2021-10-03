@@ -401,7 +401,7 @@ footer .container .left-side .contact-us a img:hover{
 @media screen and (min-width: 384px) and (max-width:666px) {
     body {
         background-size: 200vmax;
-        background-position-y: -250px;
+        background-position-y: -120px;
     }
     .jumbotron{
         width: 100%;
