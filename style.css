@@ -49,6 +49,9 @@ nav{
     margin-top: 0.2rem;
     margin-left: 1.5rem;
 }
+.akhir-about{
+    position: absolute;
+}
 .navbar .navbar-nav .nav-item .nav-link {
     color: #00438b;
     transition: 0.2s;
