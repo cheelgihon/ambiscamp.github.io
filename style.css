@@ -28,7 +28,7 @@ nav{
     font-family: 'Quicksand', sans-serif;;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color:white;
+    background-color: transparent;
 }
 .navbar .nav-img{
     width: 100%;
@@ -116,9 +116,6 @@ section#about, #home, #course, #timeline, #volunteer{
     text-transform: uppercase;
     font-style: italic;
     font-size: larger;
-}
-.akhir-about{
-    position: absolute;
 }
 #timeline, #volunteer, footer {
     background-color: #D2E7FE;
@@ -339,6 +336,9 @@ footer .container .left-side .contact-us a img:hover{
         background-size: 200vmax;
         background-position-y: 80px;
     }
+    nav{
+        background-color: white;
+    }
     .jumbotron{
         width: 100%;
         margin: 0 auto 0;
@@ -402,6 +402,9 @@ footer .container .left-side .contact-us a img:hover{
     body {
         background-size: 200vmax;
         background-position-y: -40px;
+    }
+    nav{
+        background-color: white;
     }
     .jumbotron{
         width: 100%;
@@ -467,6 +470,9 @@ footer .container .left-side .contact-us a img:hover{
         background-size: 120vmax;
         background-position-y: -90px;
     }
+    nav{
+        background-color: white;
+    }
     .jumbotron{
         width: 100%;
         margin: 50px auto 0;
@@ -527,6 +533,9 @@ footer .container .left-side .contact-us a img:hover{
     body {
         background-size: 120vmax;
         background-position-x: -120px;
+    }
+    nav{
+        background-color: white;
     }
     .jumbotron, 
     .grid{
