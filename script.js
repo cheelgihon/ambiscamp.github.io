@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // nav animation
 const nav = document.querySelector('nav')
 const navHide = document.querySelector('.hide-nav')
@@ -20,18 +19,4 @@ window.addEventListener('scroll', () => {
         navHide.classList.remove('fixed-top')
         navTransparent.classList.add('fixed-top')
     }
-=======
-// nav animation
-const nav = document.querySelector('nav')
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY
-    const width = window.innerWidth
-    if (scrolled >= 60 && width > 999 ) {
-        nav.style.backgroundColor = 'white';
-        nav.style.transition = '.5s';
-    } else if (width > 999) {
-        nav.style.backgroundColor = 'transparent';
-        nav.style.transition = '.5s';
-    }
->>>>>>> 595522587859b7e9784efaacf33c4071d2523115
 });
