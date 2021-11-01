@@ -34,12 +34,12 @@
           <div class="row">
             <div class="form-group col-md-6">
               <label for="inputWa">No. WhatsApp</label>
-              <input type="tel" minlength="11" maxlength="14" name="nowa" class="form-control" id="noWa">
+              <input type="tel" minlength="11" maxlength="14" placeholder="+62" name="nowa" class="form-control" id="noWa">
             </div>
 
             <div class="form-group col-md-6">
               <label for="inputTelp">No. Telp</label>
-              <input type="tel" minlength="11" maxlength="14" name="notelp" class="form-control" id="noTelp">
+              <input type="tel" minlength="11" maxlength="14" placeholder="+62" name="notelp" class="form-control" id="noTelp">
             </div>
           </div>
         </div>
@@ -66,13 +66,21 @@
         
         <div class="form">
           <p>Jenis Kelamin</p>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadioKlm1" name="jkelamin" value="laki-laki" class="custom-control-input input-radio">
-            <label class="custom-control-label" for="customRadioKlm1">Laki-laki</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="jkelamin" value="Laki-laki" id="customRadioKlm1" required>
+              <label class="form-check-label" for="customRadioKlm1">
+                Laki-laki
+              </label>
+            </div>
           </div>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadioKlm2" name="jkelamin" value="perempuan" class="custom-control-input input-radio">
-            <label class="custom-control-label" for="customRadioKlm2">Perempuan</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="jkelamin" value="Perempuan" id="customRadioKlm2">
+              <label class="form-check-label" for="customRadioKlm2">
+                Perempuan
+              </label>
+            </div>
           </div>
         </div>
         
@@ -101,22 +109,34 @@
         
         <div class="form">
           <p>Apakah kamu yakin ingin menjadi Relawan Ambis Camp?</p>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadioYakin1" name="yakin" value="ya" class="custom-control-input input-radio" checked>
-            <label class="custom-control-label" for="customRadioYakin1">Ya</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="yakin" value="Ya" id="customRadioYakin1" checked>
+              <label class="form-check-label" for="customRadioYakin1">
+                Ya
+              </label>
+            </div>
           </div>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadioYakin2" name="yakin" value="ragu" class="custom-control-input input-radio">
-            <label class="custom-control-label" for="customRadioYakin2">Ragu-ragu</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="yakin" value="Ragu-ragu" id="customRadioYakin2">
+              <label class="form-check-label" for="customRadioYakin2">
+                Ragu-ragu
+              </label>
+            </div>
           </div>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadioYakin3" name="yakin" value="tidak" class="custom-control-input input-radio">
-            <label class="custom-control-label" for="customRadioYakin3">Tidak</label>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="yakin" value="Tidak" id="customRadioYakin3">
+              <label class="form-check-label" for="customRadioYakin3">
+                Tidak
+              </label>
+            </div>
           </div>
         </div>
 
         <div class="form">
-          <p>Apa jabatan yang kamu pilih? <span class="clue">(Cukup pilih 1)</span></p>
+          <p>Apa jabatan yang kamu pilih? <span class="clue text-danger">(Cukup pilih 1 ya!)</span></p>
           <div class="row">
             <div class="form-group col-sm-6">
               <div class="col-sm-10">
@@ -615,34 +635,34 @@
 
 <!-- JS  Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="../Form Section/form.js"></script>
+  <script src="../form.js"></script>
   <!-- form submit -->
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxt3ZMtXCOuHzeIE2erIlgNK2smRv5rZBc8Ca_PqMcwhDeammabIuWBttmsSAQpUqac/exec'
-    const form = document.forms['admin'];
+    const rcW6ZMFYlz = 'https://script.google.com/macros/s/AKfycbxt3ZMtXCOuHzeIE2erIlgNK2smRv5rZBc8Ca_PqMcwhDeammabIuWBttmsSAQpUqac/exec'
     const btnKirim = document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
     const myAlert = document.querySelector('.my-alert');
-  
-    form.addEventListener('submit', e => {
+    const formAdmin = document.forms['admin'];
+
+    formAdmin.addEventListener('submit', e => {
         e.preventDefault()
         // ketika submit di klik
         // tampilkan tombol loading, hilangkan kirim
         btnLoading.classList.toggle('d-none');
         btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
+        fetch(rcW6ZMFYlz, { method: 'POST', body: new FormData(formAdmin)})
+        .then(response => {
             // tampilkan tombol kirim, hilangkan loading
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
             // tampilkan alert
             myAlert.classList.toggle('d-none');
             // reset form
-            form.reset();
+            formAdmin.reset();
             console.log('Success!', response)
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 </html>
