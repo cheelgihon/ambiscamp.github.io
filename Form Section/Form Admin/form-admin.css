@@ -81,23 +81,27 @@ button.btn{
 }
 @media (min-width: 320px) {
     .container {
-    max-width: 300px;
+    max-width: 350px;
 }
     .container form{
         width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }
 @media (min-width: 360px) {
     .container {
-    max-width: 300px;
+    max-width: 400px;
 }
     .container form{
         width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }
 @media (min-width: 375px) {
     .container {
-    max-width: 350px;
+    max-width: 450px;
 }
     .container form{
     width: 100%;
@@ -105,7 +109,7 @@ button.btn{
 }
 @media (min-width: 576px) {
     .container {
-    max-width: 540px;
+    max-width: 600px;
 }
 .container form{
 width: 100%;
